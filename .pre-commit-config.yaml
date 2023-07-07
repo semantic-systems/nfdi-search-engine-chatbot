@@ -3,7 +3,6 @@ repos:
     rev: v4.4.0
     hooks:
     -   id: check-merge-conflict
-    -   id: double-quote-string-fixer
     -   id: check-added-large-files
     -   id: check-byte-order-marker
     -   id: pretty-format-json
