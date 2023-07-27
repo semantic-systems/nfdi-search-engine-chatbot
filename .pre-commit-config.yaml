@@ -5,7 +5,6 @@ repos:
     -   id: check-merge-conflict
     -   id: check-added-large-files
     -   id: check-byte-order-marker
-#    -   id: pretty-format-json
     -   id: detect-private-key
     -   id: fix-encoding-pragma
     -   id: mixed-line-ending
