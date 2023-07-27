@@ -7,9 +7,10 @@ __version__ = "0.1.0"
 
 import logging
 
+from nfdichat import dataset, retriever
 from nfdichat.common import config, tools, util
 
-__all__ = ["util", "config", "tools"]
+__all__ = ["util", "config", "tools", "dataset", "retriever"]
 
 
 # Root logger configuration
