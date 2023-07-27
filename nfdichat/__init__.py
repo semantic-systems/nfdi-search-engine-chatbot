@@ -7,9 +7,9 @@ __version__ = "0.1.0"
 
 import logging
 
-from nfdichat.common import configs, tools, util
+from nfdichat.common import config, tools, util
 
-__all__ = ["util", "configs", "tools"]
+__all__ = ["util", "config", "tools"]
 
 
 # Root logger configuration

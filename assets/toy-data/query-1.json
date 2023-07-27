@@ -1,0 +1,406 @@
+{
+    "Search Term": "Ricardo Usbeck",
+    "results": {
+        "Researchers": [
+            {
+                "name": "Ricardo Usbeck",
+                "url": "https://dblp.uni-trier.de/pid/65/9656",
+                "affiliation": ""
+            },
+            {
+                "name": "Ricardo Usbeck",
+                "url": "https://openalex.org/A1905735547",
+                "affiliation": "Universität Hamburg"
+            },
+            {
+                "name": "Ricardo Usbeck",
+                "url": "https://openalex.org/A4379373607",
+                "affiliation": "Universität Hamburg"
+            },
+            {
+                "name": "Ricardo Usbeck",
+                "url": "https://orcid.org/0000-0002-0191-7211",
+                "affiliation": "No affiliations found."
+            },
+            {
+                "name": "Ricardo Usbeck",
+                "url": "http://www.wikidata.org/entity/Q67207397",
+                "affiliation": ""
+            }
+        ],
+        "Articles": [
+            {
+                "title": "GETT-QA: Graph Embedding Based T2T Transformer for Knowledge Graph Question Answering.",
+                "url": "https://doi.org/10.1007/978-3-031-33455-9_17",
+                "authors": "Debayan Banerjee, Pranav Ajit Nair, Ricardo Usbeck, Chris Biemann",
+                "description": "",
+                "date": "2023"
+            },
+            {
+                "title": "AmQA: Amharic Question Answering Dataset.",
+                "url": "https://doi.org/10.48550/arXiv.2303.03290",
+                "authors": "Tilahun Abedissa, Ricardo Usbeck, Yaregal Assabie",
+                "description": "",
+                "date": "2023"
+            },
+            {
+                "title": "GETT-QA: Graph Embedding based T2T Transformer for Knowledge Graph Question Answering.",
+                "url": "https://doi.org/10.48550/arXiv.2303.13284",
+                "authors": "Debayan Banerjee, Pranav Ajit Nair, Ricardo Usbeck, Chris Biemann",
+                "description": "",
+                "date": "2023"
+            },
+            {
+                "title": "DBLP-QuAD: A Question Answering Dataset over the DBLP Scholarly Knowledge Graph.",
+                "url": "https://doi.org/10.48550/arXiv.2303.13351",
+                "authors": "Debayan Banerjee, Sushil Awale, Ricardo Usbeck, Chris Biemann",
+                "description": "",
+                "date": "2023"
+            },
+            {
+                "title": "The Role of Output Vocabulary in T2T LMs for SPARQL Semantic Parsing.",
+                "url": "https://doi.org/10.48550/arXiv.2305.15108",
+                "authors": "Debayan Banerjee, Pranav Ajit Nair, Ricardo Usbeck, Chris Biemann",
+                "description": "",
+                "date": "2023"
+            },
+            {
+                "title": "Tree-KGQA: An Unsupervised Approach for Question Answering Over Knowledge Graphs.",
+                "url": "https://doi.org/10.1109/ACCESS.2022.3173355",
+                "authors": "Md. Rashad Al Hasan Rony, Debanjan Chaudhuri, Ricardo Usbeck, Jens Lehmann",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "A formalization of one of the main claims of \"'Dunbar's number' deconstructed\" by Lindenfors et al. 20211.",
+                "url": "https://doi.org/10.3233/ds-210049",
+                "authors": "Ricardo Usbeck",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "Survey on English Entity Linking on Wikidata: Datasets and approaches.",
+                "url": "https://doi.org/10.3233/SW-212865",
+                "authors": "Cedric Möller, Jens Lehmann, Ricardo Usbeck",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "RoMe: A Robust Metric for Evaluating Natural Language Generation.",
+                "url": "https://doi.org/10.18653/v1/2022.acl-long.387, https://aclanthology.org/2022.acl-long.387",
+                "authors": "Md. Rashad Al Hasan Rony, Liubov Kovriguina, Debanjan Chaudhuri, Ricardo Usbeck, Jens Lehmann",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "Measuring Gender Bias in German Language Generation.",
+                "url": "https://doi.org/10.18420/inf2022_108",
+                "authors": "Angelie Kraft, Hans-Peter Zorn, Pascal Fecht, Judith Simon, Chris Biemann, Ricardo Usbeck",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "The Lifecycle of \"Facts\": A Survey of Social Bias in Knowledge Graphs.",
+                "url": "https://aclanthology.org/2022.aacl-main.49",
+                "authors": "Angelie Kraft, Ricardo Usbeck",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "Knowledge Graph Question Answering Leaderboard: A Community Resource to Prevent a Replication Crisis.",
+                "url": "https://aclanthology.org/2022.lrec-1.321",
+                "authors": "Aleksandr Perevalov, Xi Yan, Liubov Kovriguina, Longquan Jiang, Andreas Both, Ricardo Usbeck",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "DialoKG: Knowledge-Structure Aware Task-Oriented Dialogue Generation.",
+                "url": "https://doi.org/10.18653/v1/2022.findings-naacl.195, https://aclanthology.org/2022.findings-naacl.195",
+                "authors": "Md. Rashad Al Hasan Rony, Ricardo Usbeck, Jens Lehmann",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "QALD-9-plus: A Multilingual Dataset for Question Answering over DBpedia and Wikidata Translated by Native Speakers.",
+                "url": "https://doi.org/10.1109/ICSC52841.2022.00045",
+                "authors": "Aleksandr Perevalov, Dennis Diefenbach, Ricardo Usbeck, Andreas Both",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "Modern Baselines for SPARQL Semantic Parsing.",
+                "url": "https://doi.org/10.1145/3477495.3531841",
+                "authors": "Debayan Banerjee, Pranav Ajit Nair, Jivat Neet Kaur, Ricardo Usbeck, Chris Biemann",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "Knowledge Graph Question Answering Datasets and Their Generalizability: Are They Enough for Future Research?",
+                "url": "https://doi.org/10.1145/3477495.3531751",
+                "authors": "Longquan Jiang, Ricardo Usbeck",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "Knowledge Graph Question Answering Leaderboard: A Community Resource to Prevent a Replication Crisis.",
+                "url": "https://arxiv.org/abs/2201.08174",
+                "authors": "Aleksandr Perevalov, Xi Yan, Liubov Kovriguina, Longquan Jiang, Andreas Both, Ricardo Usbeck",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "QALD-9-plus: A Multilingual Dataset for Question Answering over DBpedia and Wikidata Translated by Native Speakers.",
+                "url": "https://arxiv.org/abs/2202.00120",
+                "authors": "Aleksandr Perevalov, Dennis Diefenbach, Ricardo Usbeck, Andreas Both",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "RoMe: A Robust Metric for Evaluating Natural Language Generation.",
+                "url": "https://doi.org/10.48550/arXiv.2203.09183",
+                "authors": "Md. Rashad Al Hasan Rony, Liubov Kovriguina, Debanjan Chaudhuri, Ricardo Usbeck, Jens Lehmann",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "DialoKG: Knowledge-Structure Aware Task-Oriented Dialogue Generation.",
+                "url": "https://doi.org/10.48550/arXiv.2204.09149",
+                "authors": "Md. Rashad Al Hasan Rony, Ricardo Usbeck, Jens Lehmann",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "Modern Baselines for SPARQL Semantic Parsing.",
+                "url": "https://doi.org/10.48550/arXiv.2204.12793",
+                "authors": "Debayan Banerjee, Pranav Ajit Nair, Jivat Neet Kaur, Ricardo Usbeck, Chris Biemann",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "Knowledge Graph Question Answering Datasets and Their Generalizability: Are They Enough for Future Research?",
+                "url": "https://doi.org/10.48550/arXiv.2205.06573",
+                "authors": "Longquan Jiang, Ricardo Usbeck",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "Transformer with Tree-order Encoding for Neural Program Generation.",
+                "url": "https://doi.org/10.48550/arXiv.2206.13354",
+                "authors": "Klaudia-Doris Thellmann, Bernhard Stadler, Ricardo Usbeck, Jens Lehmann",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "The Ethical Risks of Analyzing Crisis Events on Social Media with Machine Learning.",
+                "url": "https://doi.org/10.48550/arXiv.2210.03352",
+                "authors": "Angelie Kraft, Ricardo Usbeck",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "The Lifecycle of \"Facts\": A Survey of Social Bias in Knowledge Graphs.",
+                "url": "https://doi.org/10.48550/arXiv.2210.03353",
+                "authors": "Angelie Kraft, Ricardo Usbeck",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "Proxy Indicators for the Quality of Open-domain Dialogues.",
+                "url": "https://doi.org/10.18653/v1/2021.emnlp-main.618, https://aclanthology.org/2021.emnlp-main.618",
+                "authors": "Rostislav Nedelchev, Jens Lehmann, Ricardo Usbeck",
+                "description": "",
+                "date": "2021"
+            },
+            {
+                "title": "Knowledge Graph Question Answering Using Graph-Pattern Isomorphism.",
+                "url": "https://doi.org/10.3233/SSW210038",
+                "authors": "Daniel Vollmers, Rricha Jalota, Diego Moussallem, Hardik Topiwala, Axel-Cyrille Ngonga Ngomo, Ricardo Usbeck",
+                "description": "",
+                "date": "2021"
+            },
+            {
+                "title": "Survey on English Entity Linking on Wikidata: Datasets and approaches",
+                "url": "http://www.wikidata.org/entity/Q111490765",
+                "authors": "Jens Lehmann, Ricardo Usbeck, Cedric Möller",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "QALD-9-plus: A Multilingual Dataset for Question Answering over DBpedia and Wikidata Translated by Native Speakers",
+                "url": "http://www.wikidata.org/entity/Q110943402",
+                "authors": "Dennis Diefenbach, Andreas Both, Ricardo Usbeck, Aleksandr Perevalov",
+                "description": "",
+                "date": "2022"
+            },
+            {
+                "title": "An Approach for Ex-Post-Facto Analysis of Knowledge Graph-Driven Chatbots – The DBpedia Chatbot",
+                "url": "http://www.wikidata.org/entity/Q87813510",
+                "authors": "Axel-Cyrille Ngonga Ngomo, Ricardo Usbeck, Gaurav Maheshwari, Priyansh Trivedi, Rricha Jalota",
+                "description": "",
+                "date": "2020"
+            },
+            {
+                "title": "FAIR.ReD: Semantic knowledge graph infrastructure for the life sciences",
+                "url": "http://www.wikidata.org/entity/Q113201697",
+                "authors": "Sören Auer, Pier Luigi Buttigieg, Lars Vogt, Ricardo Usbeck, Thomas Bartolomaeus, Peter Grobe, Peter Michalik, Markus Stocker",
+                "description": "",
+                "date": "2019"
+            },
+            {
+                "title": "Offline Question Answering over Linked Data using Limited Resources",
+                "url": "http://www.wikidata.org/entity/Q67207041",
+                "authors": "Axel-Cyrille Ngonga Ngomo, Ricardo Usbeck, Diego Moussallem, Rricha Jalota, Paramjot Kaur, Vincent Blücher",
+                "description": "",
+                "date": "2019"
+            },
+            {
+                "title": "QUANT - Question Answering Benchmark Curator",
+                "url": "http://www.wikidata.org/entity/Q75160292",
+                "authors": "Axel-Cyrille Ngonga Ngomo, Ricardo Usbeck, Daniel Vollmers, Jan Reineke, Ria Hari Gusmita, Rricha Jalota",
+                "description": "",
+                "date": "2019"
+            },
+            {
+                "title": "Why Reinvent the Wheel – Let's Build Question Answering Systems Together",
+                "url": "http://www.wikidata.org/entity/Q52159034",
+                "authors": "María-Esther Vidal, Sören Auer, Jens Lehmann, Christoph Lange, Andreas Both, Ricardo Usbeck, Kuldeep Singh, Saeedeh Shekarpour, Akhilesh Vyas, Akmal Khikmatullaev, Arun Sethupat Radhakrishna, Dharmen Punjani, Ioanna Lytra",
+                "description": "",
+                "date": "2018"
+            },
+            {
+                "title": "Enhancing Community Interactions with Data-Driven Chatbots--The DBpedia Chatbot",
+                "url": "http://www.wikidata.org/entity/Q87813552",
+                "authors": "Axel-Cyrille Ngonga Ngomo, Ricardo Usbeck, Ram G. Athreya",
+                "description": "",
+                "date": "2018"
+            },
+            {
+                "title": "MAG",
+                "url": "http://www.wikidata.org/entity/Q107808354",
+                "authors": "Axel-Cyrille Ngonga Ngomo, Ricardo Usbeck, Diego Moussallem, Michael Röeder",
+                "description": "",
+                "date": "2017"
+            },
+            {
+                "title": "GERBIL",
+                "url": "http://www.wikidata.org/entity/Q112885403",
+                "authors": "Harald Sack, Raphaël Troncy, Giuseppe Rizzo, Axel-Cyrille Ngonga Ngomo, Martin Brümmer, Ricardo Usbeck, Paolo Ferragina, Andreas Both, Roberto Navigli, Lars Wesemann, Michael Röder, Andrea Moro, Jörg Waitelonis, Christiane Lemke, Ciro Baron, Bernd Eickmann, Didier Cherix, Diego Ceccarelli, Francesco Piccinno, Marco Cornolti, René Speck",
+                "description": "",
+                "date": "2015"
+            }
+        ],
+        "Dataset": [
+            {
+                "title": "Chokwe Health Research and Training Centre INDEPTH Core Dataset 2010-2013 (Release 2016)",
+                "url": "https://search.gesis.org/research_data/datasearch-httpwww-da-ra-deoaip--oaioai-da-ra-de507251",
+                "authors": "Thompson, Ricardo; INDEPTH Network",
+                "description": "",
+                "date": "2016-07-01"
+            },
+            {
+                "title": "Chokwe Health Research and Training Centre INDEPTH Core Dataset 2010-2014 (Release 2017)",
+                "url": "https://search.gesis.org/research_data/datasearch-httpwww-da-ra-deoaip--oaioai-da-ra-de625464",
+                "authors": "Thompson, Ricardo",
+                "description": "",
+                "date": "2017-07-01"
+            },
+            {
+                "title": "Replication data for: Big Banks, Idiosyncratic Volatility, and Systemic Risk",
+                "url": "https://search.gesis.org/research_data/datasearch-httpwww-da-ra-deoaip--oaioai-da-ra-de701600",
+                "authors": "Fernholz, Ricardo T.; Koch, Christoffer",
+                "description": "Starting in the 1990s, US bank assets grew more concentrated among a few large institutions...",
+                "date": "2017-01-01"
+            },
+            {
+                "title": "Replication data for: Conveniently Upset: Avoiding Altruism by Distorting Beliefs about Others' Altruism",
+                "url": "https://search.gesis.org/research_data/datasearch-httpwww-da-ra-deoaip--oaioai-da-ra-de700650",
+                "authors": "Di Tella, Rafael; Perez-Truglia, Ricardo; Babino, Andres; Sigman, Mariano",
+                "description": "We present results from a \"corruption game\"...",
+                "date": "2014-12-27"
+            },
+            {
+                "title": "Replication data for: Racial Discrimination in Grading: Evidence from Brazil",
+                "url": "https://search.gesis.org/research_data/datasearch-httpwww-da-ra-deoaip--oaioai-da-ra-de701852",
+                "authors": "Botelho, Fernando; Madeira, Ricardo A.; Rangel, Marcos A.",
+                "description": "We investigate whether racial discrimination in the form of biased...",
+                "date": "2014-12-31"
+            },
+            {
+                "title": "Replication data for: Misperceptions about Tax Audits",
+                "url": "https://search.gesis.org/research_data/datasearch-httpwww-da-ra-deoaip--oaioai-da-ra-de703476",
+                "authors": "Bergolo, Marcelo; Ceni, Rodrigo; Cruces, Guillermo; Giaccobasso, Matias; Perez-Truglia, Ricardo",
+                "description": "For some entities, the utility-maximizing evasion rate depends substantially on tax audit features...",
+                "date": "2018-01-01"
+            },
+            {
+                "title": "Replication data for: Relative Goods' Prices, Pure Inflation, and the Phillips Correlation",
+                "url": "https://search.gesis.org/research_data/datasearch-httpwww-da-ra-deoaip--oaioai-da-ra-de702971",
+                "authors": "Reis, Ricardo; Watson, Mark W.",
+                "description": "This paper uses a dynamic factor model for the quarterly changes in consumption goods' prices...",
+                "date": "2009-12-30"
+            }
+        ],
+        "Software": [
+            {
+                "title": "dice-group/rich-context-competition: Phase-2 Final submission code",
+                "url": "https://doi.org/10.5281/zenodo.3247674",
+                "date": "2019-06-17",
+                "authors": "Jalota Rricha; Vollmers Daniel; Speck Rene; Srivastava Nikit",
+                "description": "The repo contains our final submission's refactored code for the Rich Context Competition..."
+            }
+        ],
+        "Presentation": [
+            {
+                "title": "The Ethical Risks of Analyzing Crisis Events on Social Media with Machine Learning",
+                "url": "https://doi.org/10.5281/zenodo.6857080",
+                "authors": "Angelie Kraft; Ricardo Usbeck",
+                "description": "Social media platforms provide a continuous stream of real-time news regarding crisis events...",
+                "date": "2022-07-06"
+            }
+        ],
+        "Cordis": [
+            {
+                "id": "780602",
+                "url": "https://cordis.europa.eu/project/id/780602",
+                "date": "From: 2017-12-01 - To: 2021-03-31",
+                "title": "Building the Legal Knowledge Graph for Smart Compliance Services in Multilingual Europe",
+                "description": "European small and medium-sized enterprises (SMEs) and companies operating internationally face multiple difficulties..."
+            },
+            {
+                "id": "825182",
+                "url": "https://cordis.europa.eu/project/id/825182",
+                "date": "From: 2019-01-01 - To: 2022-06-30",
+                "title": "Ready-to-use Multilingual Linked Language Data for Knowledge Services across Sectors",
+                "description": "Language technologies increasingly rely on large amounts of data and better access and usage of language resources..."
+            },
+            {
+                "id": "825627",
+                "url": "https://cordis.europa.eu/project/id/825627",
+                "date": "From: 2019-01-01 - To: 2022-06-30",
+                "title": "European Language Grid",
+                "description": "With 24 official EU and many more additional languages, multilingualism in Europe and an inclusive Digital Single Market can only be enabled through Language Technologies (LTs)..."
+            },
+            {
+                "id": "727658",
+                "url": "https://cordis.europa.eu/project/id/727658",
+                "date": "From: 2017-04-01 - To: 2020-06-30",
+                "title": "Integration and analysis of heterogeneous big data for precision medicine and suggested treatments for different types of patients",
+                "description": "The vision of IASIS is to turn the wave of data heading our way into actionable knowledge for decision makers..."
+            },
+            {
+                "id": "688227",
+                "url": "https://cordis.europa.eu/project/id/688227",
+                "date": "From: 2015-12-01 - To: 2018-11-30",
+                "title": "Holistic Benchmarking of Big Linked Data",
+                "description": "Linked Data has gained significant momentum over the last years. It is now used at industrial scale in many sectors in which an increasingly large amount of rapidly changing data needs to be processed..."
+            },
+            {
+                "id": "644055",
+                "url": "https://cordis.europa.eu/project/id/644055",
+                "date": "From: 2015-02-01 - To: 2018-01-31",
+                "title": "Aligned, Quality-centric Software and Data Engineering",
+                "description": "The rapid growth of web data creates demand for software engineering methods which can build and maintain applications that extract, process and publish web data..."
+            }
+        ]
+    }
+}
