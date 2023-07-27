@@ -3,7 +3,7 @@
 Includes Input/Output (I/O) functionalities like reading and writing from and into specific file formats.
 """
 import json
-from typing import Any, Dict, List
+from typing import Any, Dict
 
 
 def read_json(input_path: str) -> Dict[str, Any]:
@@ -31,13 +31,13 @@ def write_json(output_path: str, json_data: Any):
         json.dump(json_data, outfile, indent=4, ensure_ascii=False)
 
 
-def read_text(input_path: str) -> List[str]:
+def read_text(input_path: str) -> str:
     """
     Reads the ``text`` file of the given ``input_path``.
 
     :param input_path: Path to the text file
-    :return:  A loaded text file lines.
+    :return:  A loaded text file.
     """
     with open(input_path, "r", encoding="utf8") as f:
-        lines = f.read().split("\n")
-    return lines
+        text = f.read()
+    return text
