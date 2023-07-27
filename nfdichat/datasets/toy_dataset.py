@@ -6,7 +6,7 @@ from typing import Dict
 
 from nfdichat.common.config.dataset import DatasetConfig
 from nfdichat.common.util import io
-from nfdichat.dataset.nfdi_dataset import NFDIDataset
+from nfdichat.datasets.dataset import NFDIDataset
 
 
 class ToyDataset(NFDIDataset):
