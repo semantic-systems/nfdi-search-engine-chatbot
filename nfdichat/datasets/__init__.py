@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """ Package for the dataset component. """
-from nfdichat.datasets.dataset import NFDIDataset
-from nfdichat.datasets.toy_dataset import ToyDataset
+from nfdichat.datasets.dataset import (Dataset, DocumentProcessor, ToyDataset,
+                                       ToyDatasetDocumentProcessor)
 
-__all__ = ["NFDIDataset", "ToyDataset"]
+__all__ = ["Dataset", "DocumentProcessor", "ToyDataset", "ToyDatasetDocumentProcessor"]
