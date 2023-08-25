@@ -2,16 +2,14 @@
 """
 Root package of NFDI Search Engine ChatBot (nfdichat)
 """
-
 __version__ = "0.1.0"
 
 import logging
 
-from nfdichat import datasets, retrievers
+from nfdichat import datasets, llms, retrievers
 from nfdichat.common import config, tools, util
 
-__all__ = ["util", "config", "tools", "datasets", "retrievers"]
-
+__all__ = ["util", "config", "tools", "retrievers", "llms", "datasets"]
 
 # Root logger configuration
 logger = logging.getLogger(__name__)
