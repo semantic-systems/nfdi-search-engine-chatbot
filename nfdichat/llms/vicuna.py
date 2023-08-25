@@ -27,9 +27,7 @@ class VicunaLLM(LLM):
                 "model": self.config["MODEL_VERSION"],
                 "messages": [{"role": "user", "content": prompt}],
                 "temperature": self.config["TEMPERATURE"],
-                "key": self.config["KEY"]
-                # "max_new_tokens": 256,
-                # "stop": stop + ["Observation:"]
+                "key": self.config["KEY"],
             },
         )
         response.raise_for_status()
