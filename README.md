@@ -5,6 +5,19 @@
 
 ![images](assets/images/demo.png)
 
+## How  to run
+
+Run this project by simply following the instructions:
+```bash
+conda create -n nfdi_search_engine_chatbot python=3.9
+conda activate nfdi_search_engine_chatbot
+pip install -r requirements.txt
+
+streamlit run app.py
+```
+Then, you can now view your streamlit app in your browser.
+
+
 ## Contributors Guidelines
 
 1. Clone the repository to your local machine:
