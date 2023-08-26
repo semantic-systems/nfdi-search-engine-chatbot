@@ -44,9 +44,9 @@ llm_config = StrictDict(
     {
         "vicuna": {
             "MODEL": "VicunaLLM",
-            "KEY": os.environ["KEY"],
-            "URL": os.environ["URL"],
-            "MODEL_VERSION": os.environ["MODEL_VERSION"],
+            "KEY": os.environ["VICUNA_KEY"],
+            "URL": os.environ["VICUNA_URL"],
+            "MODEL_VERSION": os.environ["VICUNA_MODEL_VERSION"],
             "TEMPERATURE": os.environ["TEMPERATURE"],
         }
     }
