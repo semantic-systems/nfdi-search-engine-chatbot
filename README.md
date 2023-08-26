@@ -9,10 +9,17 @@
 
 Run this project by simply following the instructions:
 ```bash
+git clone https://github.com/semantic-systems/nfdi-search-engine-chatbot.git
+cd nfdi-search-engine-chatbot
+
 conda create -n nfdi_search_engine_chatbot python=3.9
 conda activate nfdi_search_engine_chatbot
 pip install -r requirements.txt
 
+cp .env-example .env
+```
+Modify the `.env` file and ad your keys and variables there. The run the app:
+```
 streamlit run app.py
 ```
 Then, you can now view your streamlit app in your browser.
