@@ -6,10 +6,10 @@
 <table>
 <tr>
     <td>
-      <img height="500px" class="center-block" src="assets/images/demo1.png">
+      <img height="400px" width="500px" class="center-block" src="assets/images/demo1.png">
     </td>
     <td>
-      <img height="500px" class="center-block" src="assets/images/demo2.png">
+      <img height="400px" width="500px" class="center-block" src="assets/images/demo2.png">
     </td>
 </tr>
 </table>
