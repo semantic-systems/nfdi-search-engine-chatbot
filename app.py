@@ -2,6 +2,13 @@
 import streamlit as st
 from streamlit_chat import message
 
+from nfdichat.chat import NFDIChatModel
+from nfdichat.datasets import ToyDataset
+
+query, items = ToyDataset().fetch()
+chatbot = NFDIChatModel()
+chatbot.set(docs=items)
+
 # Setting page title and header
 st.set_page_config(page_title="NFDI4DS ChatBot", page_icon="🤖", layout="wide")
 
@@ -33,7 +40,7 @@ st.sidebar.write(sidebar_note)
 # generate a response
 def generate_response(prompt):
     st.session_state["messages"].append({"role": "user", "content": prompt})
-    response = "Fake Answer"
+    response = chatbot.chat(question=prompt)
     st.session_state["messages"].append({"role": "assistant", "content": response})
     return response
 
@@ -54,6 +61,8 @@ if clear_button:
     st.session_state["messages"] = [
         {"role": "system", "content": "You are a helpful assistant."}
     ]
+    chatbot.set(docs=items)
+
 
 with container:
     with st.form(key="my_form", clear_on_submit=True):
@@ -63,9 +72,7 @@ with container:
         submit_button = st.form_submit_button(label="Send Message")
 
     if submit_button and user_input:
-        output, total_tokens, prompt_tokens, completion_tokens = generate_response(
-            user_input
-        )
+        output = generate_response(user_input)
         st.session_state["past"].append(user_input)
         st.session_state["generated"].append(output)
 
