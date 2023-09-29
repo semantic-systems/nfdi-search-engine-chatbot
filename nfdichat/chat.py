@@ -5,6 +5,7 @@ Root script of NFDI Search Engine ChatBot (nfdichat)
 from typing import Any
 
 from langchain.chains import ConversationalRetrievalChain
+from langchain.llms.base import LLM
 from langchain.memory import ConversationBufferMemory
 
 from nfdichat.common.config import (dataset_config, llm_config, main_config,
@@ -13,7 +14,7 @@ from nfdichat.datasets import (Dataset, DocumentProcessor,
                                ToyDatasetDocumentProcessor)
 from nfdichat.llms import VicunaLLM
 from nfdichat.retrievers import Retriever, SVMBasedRetriever
-from langchain.llms.base import LLM
+
 
 class NFDIChatModel:
     dataset_name: str = main_config["DATASET"]
@@ -35,7 +36,7 @@ class NFDIChatModel:
             retriever=retriever_db,
             memory=ConversationBufferMemory(
                 memory_key="chat_history", return_messages=True
-            )
+            ),
         )
 
     def chat(self, question: str):
