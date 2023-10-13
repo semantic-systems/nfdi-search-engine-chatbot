@@ -33,7 +33,7 @@ dataset_config = StrictDict(
 
 retriever_config = StrictDict(
     {
-        "RETRIEVER_LM_HUGGINGFACE_REPO": ("allenai/specter2"),
+        "RETRIEVER_LM_HUGGINGFACE_REPO": ("allenai/specter2_base"),
         "K": 5,
         "DEVICE": "cpu",
         "svm": "SVMBasedRetriever",
