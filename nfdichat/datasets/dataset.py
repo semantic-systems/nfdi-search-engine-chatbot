@@ -9,7 +9,8 @@ class Dataset:
     def __int__(self):
         pass
 
-    def fetch(self) -> [str, Dict]:
+    @staticmethod
+    def fetch(self, **kwargs) -> [str, Dict]:
         pass
 
 
@@ -23,10 +24,7 @@ class DocumentProcessor:
 
 
 class ToyDataset(Dataset):
-    def __init__(self):
-        pass
-
-    def fetch(self) -> [str, Dict]:
+    def fetch(self, **kwargs) -> [str, Dict]:
         toy_data = io.read_json(dataset_config["toy"]["path"])
         search_query = toy_data["Search Term"]
         retrieved_items = toy_data["results"]
@@ -34,11 +32,7 @@ class ToyDataset(Dataset):
 
 
 class ToyDatasetDocumentProcessor(DocumentProcessor):
-    def __init__(self):
-        super().__init__()
-
-    @staticmethod
-    def process(items):
+    def process(self, items):
         processed_docs = []
         for parent_key, docs in items.items():
             for doc in docs:
@@ -48,4 +42,68 @@ class ToyDatasetDocumentProcessor(DocumentProcessor):
                         continue
                     processed_doc += f"{chield_key} is '{info}', "
                 processed_docs.append(processed_doc)
+        return processed_docs
+
+
+class NFDISearchDataset(Dataset):
+    def __init__(self):
+        pass
+
+    def fetch(self, **kwargs) -> [str, Dict]:
+        data = kwargs["results"][0]
+        search_query = data["search_key"]
+        retrieved_items = data["results"]
+        return search_query, retrieved_items
+
+
+class NFDISearchDocumentProcessor(DocumentProcessor):
+    IN_VALID_KEYS = ["timedout_sources"]
+    VALID_DATA_KEYS = [
+        "name",
+        "author",
+        "description",
+        "keywords",
+        "source",
+        "abstract",
+        "license",
+        "datePublished",
+        "dateModified",
+        "dateCreated",
+        "inLanguage",
+        "publisher",
+        "orcid",
+        "affiliation",
+        "address",
+        "text",
+    ]
+    VALID_DATA_KEY_LIST_DT = ["inLanguage", "author", "keywords"]
+    # list: inLanguage, author, keywords
+
+    def process_single_doc(self, parent_topic: str, input_doc: Dict, index: int) -> str:
+        processed_doc = f"{parent_topic.lower()} {str(index + 1)}: \n"
+        for valid_key in self.VALID_DATA_KEYS:
+            value = input_doc.get(valid_key, "NONE")
+            if str(value).lower() != "none" and value != "":
+                if valid_key == "author":
+                    new_value = ""
+                    for author in value:
+                        new_value += (
+                            f"{author.get('name')} ({author.get('affiliation', '')}) ,"
+                        )
+
+                    value = new_value
+                if valid_key == "inLanguage" or valid_key == "keywords":
+                    value = ", ".join(value)
+                processed_doc += f"- {valid_key[0].upper()+valid_key[1:]} : {value}"
+        return processed_doc
+
+    def process(self, items):
+        processed_docs = []
+        for parent_key, docs in items.items():
+            if parent_key not in self.IN_VALID_KEYS:
+                for index, doc in enumerate(docs):
+                    processed_doc = self.process_single_doc(
+                        parent_topic=parent_key, input_doc=doc, index=index
+                    )
+                    processed_docs.append(processed_doc)
         return processed_docs

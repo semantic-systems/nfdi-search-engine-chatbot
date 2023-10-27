@@ -23,10 +23,13 @@ main_config = StrictDict(
 dataset_config = StrictDict(
     {
         "toy": {
-            "path": Path(__file__).parents[3].__str__()
-            + "/assets/toy-data/query-1.json",
+            "path": f"{Path(__file__).parents[3].__str__()}/assets/toy-data/query-1.json",
             "dataset": "ToyDataset",
             "document_processor": "ToyDatasetDocumentProcessor",
+        },
+        "nfdi-search": {
+            "dataset": "NFDISearchDataset",
+            "document_processor": "NFDISearchDocumentProcessor",
         },
     }
 )

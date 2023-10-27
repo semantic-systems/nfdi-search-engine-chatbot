@@ -1,4 +1,6 @@
 beautifulsoup4~=4.12.2
+flask
+Flask-Session
 langchain~=0.0.272
 openai~=0.27.9
 Pillow~=9.5.0
