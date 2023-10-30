@@ -89,7 +89,7 @@ Request Body:
     "chat-history": [],
     "search-results": [
         {
-            ...
+            
         }
     ]
 }
@@ -102,7 +102,7 @@ Respond:
     "chat-history": [{"input": "You are talking about who?", "output": "......."}],
     "search-results": [
         {
-            ...
+            
         }
     ]
 }
