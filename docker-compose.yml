@@ -1,0 +1,9 @@
+version: "3"
+services:
+  nfdisearchchatbot:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:5000
+    container_name: nfdisearchchatbot

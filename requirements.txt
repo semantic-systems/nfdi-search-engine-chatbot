@@ -1,10 +1,15 @@
 beautifulsoup4~=4.12.2
+flask
+Flask-Session
 langchain~=0.0.272
 openai~=0.27.9
 Pillow~=9.5.0
 pre-commit~=3.1.0
 python-dotenv~=1.0.0
+python-dotenv~=1.0.0
 requests~=2.31.0
+sentence-transformers
 streamlit~=1.25.0
 streamlit-chat~=0.1.1
 virtualenv~=20.23.1
+watchdog

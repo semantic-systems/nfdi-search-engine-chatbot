@@ -23,17 +23,20 @@ main_config = StrictDict(
 dataset_config = StrictDict(
     {
         "toy": {
-            "path": Path(__file__).parents[3].__str__()
-            + "/assets/toy-data/query-1.json",
+            "path": f"{Path(__file__).parents[3].__str__()}/assets/toy-data/query-1.json",
             "dataset": "ToyDataset",
             "document_processor": "ToyDatasetDocumentProcessor",
+        },
+        "nfdi-search": {
+            "dataset": "NFDISearchDataset",
+            "document_processor": "NFDISearchDocumentProcessor",
         },
     }
 )
 
 retriever_config = StrictDict(
     {
-        "RETRIEVER_LM_HUGGINGFACE_REPO": ("allenai/specter2"),
+        "RETRIEVER_LM_HUGGINGFACE_REPO": ("allenai/specter2_base"),
         "K": 5,
         "DEVICE": "cpu",
         "svm": "SVMBasedRetriever",

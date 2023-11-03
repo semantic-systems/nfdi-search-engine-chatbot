@@ -57,3 +57,53 @@ git push
 ```
 
 4. Merge request to `main` for review.
+
+## How to deploy
+
+**Using Docker**
+1. Create a `.env` file similar to `.env-example` and add the `VICUNA_KEY` and `VICUNA_URL` there.
+2. Running using Dockerfile
+```commandline
+docker build -t nfdisearchchatbot .
+
+docker run -d -p 5000:5000 nfdisearchchatbot
+```
+3. Test whatever everything is set up and works
+http://0.0.0.0:5000/ping
+
+**Using docker-compose**
+1. Create a `.env` file similar to `.env-example` and add the `VICUNA_KEY` and `VICUNA_URL` there.
+2. Run the following command line:
+```commandline
+docker-compose up
+```
+3. Test whatever everything is set up and works: http://0.0.0.0:5000/ping
+
+
+### Request to deployed app.
+Request URL: http://0.0.0.0:5000/chat
+Request Body:
+```json
+{
+    "question": "You are talking about who?",
+    "chat-history": [],
+    "search-results": [
+        {
+            
+        }
+    ]
+}
+```
+
+Respond:
+```json
+{
+    "question": "You are talking about who?",
+    "chat-history": [{"input": "You are talking about who?", "output": "......."}],
+    "search-results": [
+        {
+            
+        }
+    ]
+}
+```

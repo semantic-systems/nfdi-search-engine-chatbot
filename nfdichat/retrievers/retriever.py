@@ -2,6 +2,7 @@
 """
 Retriever package that provides a set of different retrievers.
 """
+import datetime
 from typing import Any
 
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
@@ -22,6 +23,9 @@ class Retriever:
         pass
 
     def load_embedding(self) -> HuggingFaceEmbeddings:
+        print(
+            f"{datetime.datetime.now()}    Loading Embedding from HuggingFaceEmbeddings"
+        )
         embedding = HuggingFaceEmbeddings(
             model_name=self.config["RETRIEVER_LM_HUGGINGFACE_REPO"],
             model_kwargs={"device": self.config["DEVICE"]},
