@@ -40,6 +40,8 @@ retriever_config = StrictDict(
         "K": 5,
         "DEVICE": "cpu",
         "svm": "SVMBasedRetriever",
+        "ensemble": "EnsembleBasedRetriever",
+        "tfidf": "TFIDFBasedRetriever",
     }
 )
 
