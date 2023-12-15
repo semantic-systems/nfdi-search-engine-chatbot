@@ -9,6 +9,10 @@
 
 ![image](assets/images/demo2.png)
 
+## NFDI-ChatBot
+The current model operates on Retrieval Augmented Generation (RAG) and integrates optional retrieval techniques like `TFIDF`,
+`SVM`, and `Ensemble` to fetch documents for language model (LLM) such as `Vicuna`, enhancing its generation capabilities.
+
 ## How  to run
 
 Run this project by simply following the instructions:
@@ -66,7 +70,7 @@ git push
 ```commandline
 docker build -t nfdisearchchatbot .
 
-docker run -d -p 5000:5000 nfdisearchchatbot
+docker run -d -p 6000:6000 nfdisearchchatbot
 ```
 3. Test whatever everything is set up and works
 http://0.0.0.0:5000/ping
@@ -77,11 +81,11 @@ http://0.0.0.0:5000/ping
 ```commandline
 docker-compose up
 ```
-3. Test whatever everything is set up and works: http://0.0.0.0:5000/ping
+3. Test whatever everything is set up and works: http://0.0.0.0:6000/ping
 
 
 ### Request to deployed app.
-Request URL: http://0.0.0.0:5000/chat
+Request URL: http://0.0.0.0:6000/chat
 Request Body:
 ```json
 {
@@ -89,7 +93,7 @@ Request Body:
     "chat-history": [],
     "search-results": [
         {
-            
+
         }
     ]
 }
@@ -102,7 +106,7 @@ Respond:
     "chat-history": [{"input": "You are talking about who?", "output": "......."}],
     "search-results": [
         {
-            
+
         }
     ]
 }
