@@ -3,9 +3,14 @@ import streamlit as st
 from streamlit_chat import message
 
 from nfdichat.chat import NFDIChatModel
-from nfdichat.datasets import ToyDataset
+from nfdichat.common.util import io
+from nfdichat.datasets import NFDISearchDataset
 
-query, items = ToyDataset().fetch()
+search_results = io.read_json(input_path="assets/nfdi-search/results.json")
+query, items = NFDISearchDataset().fetch(**{"results": search_results})
+
+# from nfdichat.datasets import ToyDataset
+# query, items = ToyDataset().fetch()
 chatbot = NFDIChatModel()
 chatbot.set(docs=items)
 
