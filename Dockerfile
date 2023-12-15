@@ -1,4 +1,4 @@
-FROM python:3.8-slim-buster as builder
+FROM python:3.10-slim-buster as builder
 LABEL authors="Hamed Babaei Giglou"
 
 RUN mkdir /app
