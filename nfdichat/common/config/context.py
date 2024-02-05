@@ -29,7 +29,8 @@ dataset_config = StrictDict(
         },
         "nfdi-search": {
             "dataset": "NFDISearchDataset",
-            "document_processor": "NFDISearchDocumentProcessor",
+            # "document_processor": "NFDISearchDocumentProcessor",
+            "document_processor": "NFDISearchResultsDocumentProcessor",
         },
     }
 )
@@ -37,7 +38,7 @@ dataset_config = StrictDict(
 retriever_config = StrictDict(
     {
         "RETRIEVER_LM_HUGGINGFACE_REPO": ("allenai/specter2_base"),
-        "K": 5,
+        "K": 2,
         "DEVICE": "cpu",
         "svm": "SVMBasedRetriever",
         "ensemble": "EnsembleBasedRetriever",
@@ -52,7 +53,13 @@ llm_config = StrictDict(
             "KEY": os.environ["VICUNA_KEY"],
             "URL": os.environ["VICUNA_URL"],
             "MODEL_VERSION": os.environ["VICUNA_MODEL_VERSION"],
-            "TEMPERATURE": os.environ["TEMPERATURE"],
-        }
+            "TEMPERATURE": os.environ["VICUNA_TEMPERATURE"],
+        },
+        "openai": {
+            "MODEL": "OpenAILLM",
+            "MODEL_VERSION": os.environ["OPENAI_MODEL_VERSION"],
+            "KEY": os.environ["OPENAI_API_KEY"],
+            "TEMPERATURE": os.environ["OPENAI_TEMPERATURE"],
+        },
     }
 )

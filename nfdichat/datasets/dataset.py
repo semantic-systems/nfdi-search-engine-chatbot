@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
+import json
+from pprint import pprint
 from typing import Any, Dict, List
 
 from nfdichat.common.config import dataset_config
-from nfdichat.common.util import io
+from nfdichat.common.util import helper_functions, io
 
 
 class Dataset:
@@ -116,4 +118,45 @@ class NFDISearchDocumentProcessor(DocumentProcessor):
         print(
             f":::::::::::::::::::: Processed documents (NO:{len(processed_docs)}) ::::::::::::::"
         )
+
+        return processed_docs
+
+
+class NFDISearchResultsDocumentProcessor(DocumentProcessor):
+    def process_single_doc(
+        self, parent_topic: str, input_doc: Dict, index: int
+    ) -> dict:
+        # pprint(input_doc)
+
+        # Properties to exclude
+        PROPERTIES_TO_IGNORE = [
+            "description",
+            "abstract",
+            "objective",
+        ]
+
+        out_dict = {}
+        out_dict = helper_functions.flatten(input_doc)
+        output_doc = parent_topic + "-No. " + str(index) + ": \n"
+        for k, v in out_dict.items():
+            if v and (k not in PROPERTIES_TO_IGNORE):
+                output_doc += f"- {k}: {v} \n"
+
+        # print("==="*30)
+        # pprint(output_doc)
+        return output_doc
+
+    def process(self, items):
+        processed_docs = []
+        for parent_key, docs in items.items():
+            for index, doc in enumerate(docs):
+                processed_doc = self.process_single_doc(
+                    parent_topic=parent_key, input_doc=doc, index=index
+                )
+                # processed_doc_str = json.dumps(processed_doc)
+                processed_docs.append(processed_doc)
+        print(
+            f":::::::::::::::::::: Processed documents (NO:{len(processed_docs)}) ::::::::::::::"
+        )
+
         return processed_docs
