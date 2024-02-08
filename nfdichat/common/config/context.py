@@ -17,6 +17,15 @@ main_config = StrictDict(
         "DATASET": os.environ["DATASET"],
         "RETRIEVER": os.environ["RETRIEVER"],
         "LLM": os.environ["LLM"],
+        "SEARCH_RESULTS_DIR": os.environ["SEARCH_RESULTS_DIR"],
+        "SEARCH_RESULTS_RAW_FILE_NAME": os.environ["SEARCH_RESULTS_RAW_FILE_NAME"],
+        "SEARCH_RESULTS_PROCESSED_FILE_NAME": os.environ[
+            "SEARCH_RESULTS_PROCESSED_FILE_NAME"
+        ],
+        "SEARCH_RESULTS_EMBEDDINGS_FILE_NAME": os.environ[
+            "SEARCH_RESULTS_EMBEDDINGS_FILE_NAME"
+        ],
+        "CHAT_HISTORY_FILE_NAME": os.environ["CHAT_HISTORY_FILE_NAME"],
     }
 )
 
@@ -37,7 +46,9 @@ dataset_config = StrictDict(
 
 retriever_config = StrictDict(
     {
-        "RETRIEVER_LM_HUGGINGFACE_REPO": ("allenai/specter2_base"),
+        # "RETRIEVER_LM_HUGGINGFACE_REPO": ("allenai/specter2_base"),
+        # "RETRIEVER_LM_HUGGINGFACE_REPO": ("allenai/specter2"),
+        "RETRIEVER_LM_HUGGINGFACE_REPO": ("sentence-transformers/all-MiniLM-L6-v2"),
         "K": 2,
         "DEVICE": "cpu",
         "svm": "SVMBasedRetriever",

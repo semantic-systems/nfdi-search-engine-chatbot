@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import json
+import os
 import traceback
 
 from flask import Flask, jsonify, request
@@ -9,6 +11,7 @@ from langchain_core.prompts.prompt import PromptTemplate
 
 from nfdichat.common.config import (dataset_config, llm_config, main_config,
                                     retriever_config)
+from nfdichat.common.util import io
 from nfdichat.datasets import *
 from nfdichat.llms import *
 from nfdichat.retrievers import *
@@ -25,33 +28,23 @@ LLM_MODEL: LLM = eval(llm_config[main_config["LLM"]]["MODEL"])()
 
 @app.route("/ping")
 def ping():
-    return "This is NFID-Search ChatBot"
+    return "This is NFDI-Search Chatbot"
 
 
 @app.route("/chat", methods=["POST", "GET"])
 def chat():
     try:
-        # data = request.get_json(force=True)
-        # question = data.get("question")
-        # chat_history_list = data.get("chat-history")
-        # search_results = data.get("search-results")
+        data = request.get_json(force=True)
+        question = data.get("question")
+        search_uuid = data.get("search_uuid")
 
-        import json
-
-        def load_search_results(file_name):
-            with open(file_name, "r", encoding="utf8") as f:
-                data = json.load(f)
-            return data
+        directory_path = os.path.join(main_config["SEARCH_RESULTS_DIR"], search_uuid)
+        chat_history_file_path = os.path.join(
+            directory_path, main_config["CHAT_HISTORY_FILE_NAME"]
+        )
+        chat_history_list = io.read_json(chat_history_file_path)
 
         data = {}
-        # question = "You are talking about who?"
-        # question = "What is the latest publication?"
-        question = "Who is Ricardo?"
-        # question = "What is the title of Ricardo's first publication?"
-        chat_history_list = []
-        search_results = load_search_results("assets/nfdi-search/results3.json")
-
-        query, items = NFDISearchDataset().fetch(**{"results": search_results})
         memory = ConversationBufferMemory(
             memory_key="chat_history", return_messages=True
         )
@@ -59,21 +52,6 @@ def chat():
             memory.save_context(
                 {"input": chat_history["input"]}, {"output": chat_history["output"]}
             )
-
-        # custom_template = """You work for CompanyX which sells things located in United States.
-        # If you don't know the answer, just say that you don't. Don't try to make up an answer.
-        # Base your questions only on the knowledge provided here. Do not use any outside knowledge.
-        # Given the following chat history and a follow up question,
-        # rephrase the follow up question to be a standalone question, in its original language.
-        # Chat History:
-        # {chat_history}
-        # Follow Up Input: {question}
-        # Standalone question:
-        # """
-        # CUSTOM_QUESTION_PROMPT = PromptTemplate.from_template(custom_template)
-        # CUSTOM_PROMPT = PromptTemplate(
-        #     template=prompt_template, input_variables=["context", "question"]
-        # )
 
         custom_template = """Provide your answers only on the knowledge provided here. Do not use any outside knowledge.
         If you don't know the answer, just say that you don't know. Don't try to make up an answer.
@@ -92,7 +70,7 @@ def chat():
         CHATBOT = ConversationalRetrievalChain.from_llm(
             llm=LLM_MODEL,
             chain_type="stuff",
-            retriever=RETRIEVER.build_retriever(docs=items),
+            retriever=RETRIEVER.build_retriever(search_uuid=search_uuid),
             memory=memory,
             # condense_question_prompt=CUSTOM_PROMPT,
             combine_docs_chain_kwargs={"prompt": CUSTOM_PROMPT},
@@ -100,6 +78,10 @@ def chat():
         answer = CHATBOT({"question": question})
         answer = answer["answer"]
         chat_history_list.append({"input": question, "output": answer})
+
+        # update chat history file
+        io.write_json(chat_history_file_path, chat_history_list)
+
         data["chat-history"] = chat_history_list
         return jsonify(data)
 
@@ -110,9 +92,16 @@ def chat():
         return jsonify(data)
 
 
-# @app.route("/generate_embeddings", methods=["POST", "GET"])
-# def generate_embeddings():
-#     search_results = request.form["search-results"]
+@app.route("/save_docs_with_embeddings/<uuid>", methods=["POST", "GET"])
+def save_docs_with_embeddings(uuid):
+    search_results = request.get_json()
+    search_uuid = uuid
+    print("uuid:", search_uuid)
+
+    global RETRIEVER
+    RETRIEVER.save_docs_with_embeddings(json.loads(search_results), search_uuid)
+
+    return "success"
 
 
 if __name__ == "__main__":

@@ -161,3 +161,4 @@ cython_debug/
 #.idea/
 
 .pre-commit-config.yaml
+assets/nfdi-search/
