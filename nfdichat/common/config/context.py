@@ -38,7 +38,6 @@ dataset_config = StrictDict(
         },
         "nfdi-search": {
             "dataset": "NFDISearchDataset",
-            # "document_processor": "NFDISearchDocumentProcessor",
             "document_processor": "NFDISearchResultsDocumentProcessor",
         },
     }
@@ -49,7 +48,7 @@ retriever_config = StrictDict(
         # "RETRIEVER_LM_HUGGINGFACE_REPO": ("allenai/specter2_base"),
         # "RETRIEVER_LM_HUGGINGFACE_REPO": ("allenai/specter2"),
         "RETRIEVER_LM_HUGGINGFACE_REPO": ("sentence-transformers/all-MiniLM-L6-v2"),
-        "K": 2,
+        "K": 10,
         "DEVICE": "cpu",
         "svm": "SVMBasedRetriever",
         "ensemble": "EnsembleBasedRetriever",

@@ -110,14 +110,37 @@ class SVMBasedRetriever(Retriever):
         # )
         return retriever_db
 
+class TFIDFBasedRetriever(Retriever):
+    def __init__(self, document_processor: DocumentProcessor, **kwargs):
+        super().__init__(document_processor)
 
+    def build_retriever(self, search_uuid: str) -> Any:
+        directory_path = os.path.join(
+            self.main_config["SEARCH_RESULTS_DIR"], search_uuid
+        )
+        search_results_processed_file_path = os.path.join(
+            directory_path, self.main_config["SEARCH_RESULTS_PROCESSED_FILE_NAME"]
+        )
+        processed_docs = io.read_json(search_results_processed_file_path)        
+        retriever_db = TFIDFRetriever.from_texts(
+            texts=processed_docs, k=self.config["K"]
+        )
+        return retriever_db
+    
 class EnsembleBasedRetriever(Retriever):
     def __init__(self, document_processor: DocumentProcessor, **kwargs):
         super().__init__(document_processor)
         self.embedding = self.load_embedding()
 
-    def build_retriever(self, docs: Any) -> Any:
-        processed_docs = self.document_processor.process(items=docs)
+    def build_retriever(self, search_uuid: str) -> Any:
+        directory_path = os.path.join(
+            self.main_config["SEARCH_RESULTS_DIR"], search_uuid
+        )
+        search_results_processed_file_path = os.path.join(
+            directory_path, self.main_config["SEARCH_RESULTS_PROCESSED_FILE_NAME"]
+        )
+        processed_docs = io.read_json(search_results_processed_file_path)
+
         tfidf_retriever = TFIDFRetriever.from_texts(
             texts=processed_docs, k=self.config["K"]
         )
@@ -130,13 +153,4 @@ class EnsembleBasedRetriever(Retriever):
         return retriever_db
 
 
-class TFIDFBasedRetriever(Retriever):
-    def __init__(self, document_processor: DocumentProcessor, **kwargs):
-        super().__init__(document_processor)
 
-    def build_retriever(self, docs: Any) -> Any:
-        processed_docs = self.document_processor.process(items=docs)
-        retriever_db = TFIDFRetriever.from_texts(
-            texts=processed_docs, k=self.config["K"]
-        )
-        return retriever_db
