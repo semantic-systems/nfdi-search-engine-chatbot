@@ -1,0 +1,302 @@
+A Catalog of the Wizard LLM series
+Web content accessibility for non-HEI websites
+Diffusion models for 3D content generation
+Overview of the motion trajectories datasets
+Overview of Crowd Intelligence in Requirements Engineering
+Models of precision text sentiment analysis
+Surveying models for Relation Extraction
+Multimodal topic detection in social media posts
+Representations for Irrigation and Erosion Control in Farmaing
+Comparative analysis of Fake News Detection schemes
+Overview of the tabular datasets published during SemTab challenges
+A comparison on Query-Answering System in Knowledge Graphs
+Problems encountered by Semantic Table Annotations during SemTab 2019 challenge
+Data sources for food ontologies construction
+A Catalog of Google's T5 series LLMs
+Question answering systems
+Aerial Image Datasets for Vehicle detection task
+Named Entity Recognition in the Computational Natural Language Learning (CoNLL) Series
+KBQA Relation Linking Datasets
+Pragmatics of complaints
+Review of food information use to build food recommendation, Question Answering and dialog systems
+BioCreative Series
+Event-based datasets representation comparison
+Proposed Models for Precision Text Sentiment Analysis
+Surveying BioCreAtIvE Shared Tasks Corpora for Relation Extraction
+Learning approaches on the T4SS domain entity extraction
+A comparison on Query-Answering System in Knowledge Graphs
+Eye tracking datasets at a glance
+Ontology Learning from source code
+Comparing Explainable Diabetic Retinopathy (ExplainDR) to the state-of-the-art
+On A Generalized Framework for Time-Aware Knowledge Graphs
+RNN grammaticality judgments on syntax-sensitive dependencies
+COVID-19 Fake News
+Embedding and Knowledge graphs
+A comparison on Short Text Classification
+Human Motion Synthesize and Editing
+Human Motion Quality Analysis for Wellness Applications
+Temporal Question Answering / Temporal Generalization
+Exploring Digital Twin Models based on Knowledge Graphs
+Language Corpora Annotation and Processing
+Food Knowledge Graphs integration
+Linked Data Publishing using Scholarly Ontologies
+Graph-based author name disambiguation
+Transboundary Cooperation in context of Water Food Energy Nexus
+Knowledge extraction and graph based representation
+Ontology learning from thesauri
+Exploring Large Language Models for Multilingual Tasks
+Chemical Enties and Clinical Drug Reactions NER and Relation Extraction
+Surveying BioCreAtIvE Shared Tasks Corpora for Entity Normalization
+Prototypes of Decentralized Scientific Publishing using Blockchain Technology
+Gender bias in Natural Language Process
+Object Detection using Event Camera
+Approaches to contextual morphological analysis
+Exploring Interpretability of Knowledge Graph-enhanced Large Language Models
+Exploring Large Language Models augmented Knowledge Graph Completion Methods
+Neural-symbolic models
+Wikipedia-based Named Entity Recognition
+Functional and Non-functional Requirements Classification Approaches
+A comparison of state-of-the-art approaches to Sign Language recognition
+Named Entity Recognition in the Message Understanding Conference (MUC) series
+Exploring the role of ontologies in Manufacturing and Industry 4.0
+Ontology Learning Sources
+Exploring methods for injecting knowledge into BERT
+Knowledge-Based eXplainable systems
+Fusion-Based Detection of Stationary On-Road and Off-Road Objects for Autonomous Vehicle Guidance
+Semi-supervised author name disambiguation
+Kinect human activity recognition dataset
+Analyzing visualization tools for Knowledge Graphs
+Human Gesture Recognition Datasets
+QA evaluations on QALD-5
+SemEval-2020 Task 4: Commonsense Validation and Explanation
+Baseline methods for Human or Automatic evaluation of Food Knowledge Base Question Answering systems and Food recommendation systems
+Ontology learning from Taxonomies
+Analysis of approaches based on required elements in way of modeling
+Services for Large Numbers of RDF datasets
+Japanese corpora for Named Entity Recognition (NER)
+Question templates for Food Question Answering Systems
+Datasets for NLP tasks on scholarly articles
+Review on ICT for education of children with special needs: relevant features and expert evaluation design
+Ontological knowledge learned from source code
+Arabic corpora for Named Entity Recognition (NER)
+IoT dependencies extraction and modeling
+Ontologies in internet of Things
+Investigating application of Web Content Accessibility Guidelines for higher institutions websites
+On building a sign language corpus (dictionary)
+Datasets for human motion generation
+Human Motion Quality Analysis for sports applications.
+SemEval-2020 Task 3: Graded Word Similarity in Context Subtask 2
+Collaboration and federation in IoT device management
+Machine learning methods for transport mode
+Overview of the four editions of SemTab challenge
+Efficient Transformer Models
+Food ontologies construction
+Chinese corpora for Named Entity Recognition (NER)
+Neural-symbolic main concepts
+Relational Representation Learning for Biomedical Data using OWL Axioms
+Data statistics of the personalized Knowledge Base/Graph Question Answering benchmark
+Semantic representation comparison of papers
+Wikipedia-resource-based NER
+DFU classification performance
+IMU-based human motion tracking (IHMT)
+comparison of crowd evacuation models
+Named Entity Recognition in the CoNLL Series and the OntoNotes corpus as a related resource
+Other GENIA Project corpora
+Ontology learning from images
+NLP-based Representations of Sentiment Analysis for African Languages
+Human Motion Database
+Supervised author name disambiguation
+Use of artificial intelligence based algorithm for radiological diagnosis of breast cancer
+Recent summarization efforts
+Characteristics and specifications of dashboards developed for the COVID-19 pandemic
+Exploring the roles of Large Language Models in Medical Assistance
+Business Architecture frameworks
+Knowledge graphs in NLP: Entity Extraction
+Recommender systems for smart cities  Smart governance dimension
+Comparing the multi-perspective categorization of diffusion models in computer vision
+Different Perspectives on the Digital Twin
+Ontology for Smart Contracts
+Disambiguation Tecnology compare
+Annotated Arabic Corpora
+A comparison on Ontology Learning algorithms
+State-of-the-Art in Arabic Dialects Identification
+Wearable sensor-based human activity recognition systems
+Motion Capture system
+Baseline metrics used during Human evaluation of Food QA and Food recommendation systems
+Purposes and future works of the SemTab challenges
+Ontology learning from UML models
+Ontology learning from Glossaries
+Example Data from "A Decade of Knowledge Graphs in Natural Language Processing" (Schneider et al. 2022)
+State-of-the-art pedestrian detectors evaluation comparision
+A review over some in-memory yet scalable outlier detection methodologies
+Soft Robotics gloves for rehabilitation for stroke impaired hand
+Food ontologies integration
+Example Data from A Decade of Knowledge Graphs in Natural Language Processing
+BGP Security Solutions
+Motorcycle detection and tracking in ADAS
+Human values and emotions in Software Engineering
+List of Food Image Dataset
+Ontology Matching
+Comparative analysis of Fake News detection frameworks
+Existing Chinese Hierarchical Discourse Datasets
+Datasets used for food dialog system  food recommendation and food Question Answering
+Application areas of Digital Twin solutions in the smart city domain
+Entity Linking in Knowledge Graphs
+Lidar Data for semantic segmentation
+Human Motion Synthesis and Editing Techniques
+Event-guided video frame interpolation (VFI) methods
+Scalable Semantic Similarity Estimation Frameworks for RDF Knowledge Graphs
+Historical illustrations as a basis of VR technolofy
+ Use of a computer-aided diagnosis System (S-Detect) for the diagnosis of thyroid nodules on ultrasound
+Unsupervised author name disambiguation
+The impact of data normalization (data scaling) on the performance of supervised machine learning algorithms
+Baseline methods used for the comparison of Food QA and Food recommendation systems
+Ontology Learning from Text
+Hand gesture recognition methods
+Connectionists models
+Surrounding vehicle's lane change maneuver inferences
+Advances methods for diagnosis and treatment of brain disorders
+Nested Named Entity Recognition Corpus and Extended Named Entity Hierarchies for the Newswire domain
+Surveying BioCreAtIvE Shared Tasks Corpora for Text Retrieval
+On Time-Aware Knowledge Graph Extensions
+The machine learning methods implemented environmental features detection
+SemEval-2020 Task 5: Counterfactual Recognition Subtask 2
+Benchmark describing the datasets used in the papers related to Neural-symbolic research
+Summary on existing food knowledge graphs
+Thematic Identification of the City Digital Twin Potentials
+Overview of Approaches that Classify User Feedback as Feature Request
+Aggressive and Offensive Language in Low-resourced languages- A comparative study.
+Pedestrian datasets for vision based detection and tracking tasks
+Evaluation during the four editions of SemTab challenges
+Food Question Answering systems
+Reported use of open, open access, online or public repositories/ databases in research
+Wearable Inertial Sensors for Human Motion Analysis - Lower limb
+Tabular Datasets used during the SemTab 2020
+Diverse approaches for the reproducibility of scientific work
+Spanish corpora for Named Entity Recognition (NER)
+Databases used for still image-based action recognition
+Wearable Inertial Sensors for Human Motion Analysis - Upper limb
+Overview of user feedback classification approaches
+Tabular Data to Knowledge Graph Matching problems
+Exploring Semantic Interoperability with IoT based Knowledge Graphs in Industry 4.0
+Large Language Model augmented Knowledge Graph embedding
+Workshop on Noisy User-generated Text (W-NUT) Series of Shared Tasks Focused on Twitter NER
+Word Sense Disambiguation
+Human motion analysis using inertial sensor system
+Low Resources Language Translation
+Food recommendation models
+Overview of SemTab@ISWC 2020 systems papers
+Datasets for the Natural Language Processing Task of Scientific Concept and Relation Extraction
+Classification of gaze estimation algorithms
+The GENIA corpus
+Information Extraction systems and their approaches
+Information Security, Biometrics and AI
+NLP and Knowledge Graph Representations and Reasoning for Question Answering Modeling
+Information and communication technologies (ICT) in communication of hearing-impaired personsfalse
+NER in the Automatic Content Extraction (ACE) Series
+Code-switched corpora for Named Entity Recognition (NER)
+Multimodal sentiment analysis
+Vehicle Detection Methods - A Comparision
+NER in the OntoNotes Corpus
+Implementations of the video as a by-product approach
+SOTAB dataset split
+Ontology learning from Folkosonomies
+Exploring Large Language Models in General Science
+Food Knowledge Graph description
+Explainable Cyber-Physical System approaches
+Food Knowledge Graph construction
+Surveying BioCreAtIvE Shared Tasks Corpora for Text Snippet Extraction
+Ablation study of food recommendation models
+Large Language Model-based Knowledge Graph construction methods comparison
+SemEval-2020 Task 3: Graded Word Similarity in Context Subtask 1
+NLP Datasets for Scientific Concept and Relation Extraction
+QA evaluations on QALD-6
+Surveying BioNLP Shared Tasks Corpora for Relation Extraction
+Representations and Reasoning with Multilingual Knowledge about Critical Medical Conditions
+SemEval-2020 Task 5: Counterfactual Recognition Subtask 1
+Human Motion Analysis during exercise for healthcare applications
+Hindi corpora for Named Entity Recognition (NER)
+Innovations in heritage  preservation
+Food ontologies metric
+Evaluation metrics used during Tabular Data to Knowledge Graph Matching challenges since 2020
+Named Entity Recognition Based on Wikipedia
+Semantic similarity computation
+Diagnosis of heart sounds
+Human Motion Synthesis
+Privacy-Preserving Deep Learning on Machine Learning as a Service
+Ontology Learning from Entity Relation Model
+Summary of existing food ontologies
+LiDAR and image data based depth completion models
+Datasets used for food recommendation and food Question Answering
+Biomedical Named Entity Recognition Datasets
+Representing and Reasoning for Crop Yield Improvement
+Benchmark describing papers related to Neural-symbolic research
+German corpora for Named Entity Recognition (NER)
+Summary of SemTab 2020 results per round
+Data statistics of the personalized Knowledge Base/Graph Question Answering benchmark
+Exploring the role of Semantic IoT in different domains
+Exploring  Large Language Models (LLMs) to address mathematical problems
+Overview of systems papers for tabular data annotation published by SemTab@ISWC2021
+Datasets for 3D object detection in the context of autonomous driving
+Surveying BioCreAtIvE Shared Tasks Corpora for Named Entity Recognition
+Inverse Kinematics in Animation
+Large Language Model augmented Knowledge Graph to Text Generation
+A Personal Health Knowledge Graph pipeline comparison
+Datasets for NLP tasks on scholarly articles
+Computer vision guided pulse rate estimation techniques
+Knowledge graphs in NLP: Text Analysis
+Semantic representations of scholarly communication
+Exploring LLMs as Enhancer to assist graph-related tasks in literature
+Food ontologies metric
+Ontology learning from XML documents
+Student engagement and persistence in massive open online courses (MOOCs)
+Ontology-Based systems aim to semantically search data into ontologies implemented in e-government domain.
+Question Answering benchmarks
+Ontology learning from videos
+XSD-based approaches for ontology learning from XML documents
+Screening of the papers presented at Artificial Intelligence Section at Computer Science and Information Technologies CSIT 2022 conference
+Human pose estimation datasets
+Exploring the roles of Large Language Models in Medical Assistant
+Surveying BioNLP Shared Tasks Corpora for Normalization
+Statistics from 156 recipe requests from Reddit
+Ontology Learning from Relational Database
+Global description of food information engineering reviews papers
+NER Annotations in the OntoNotes Corpus
+Named Entity Recognition in the Automatic Content Extraction (ACE) Series
+Machine Learning Methods Applied to Urban Mobility
+Personal Knowledge Graphs to deal with User-Centric Data
+Bag-of-Word and Bidirectional Attentive Memory networks methods for answering Competency Question in Natural Language over FoodKG
+Human evaluation of food recommendation systems
+ICT in communication of hearing-impaired personsfalse
+SPARQL Query Optimization
+Analyzing visualization tools for Knowledge Graphs
+Exploring Language Models in Education
+Surveying BioNLP Shared Tasks Corpora for Event Extraction
+Catalog of Large Language Models
+Semantic Web
+Computer and Systems Architecture
+Operating, Communication, Database and Distributed Systems
+Networking and Internet Architecture
+Semantics/Pragmatics
+Requirements Engineering
+Analysis
+Discourse/Text Linguistics
+Human Computer Interfaces
+Software Engineering
+Databases/Information Systems
+Linguistics
+Digital Communications and Networking
+Information Systems, Process and Knowledge Management
+Computational Neuroscience
+Computer Vision and Pattern Recognition
+Computer Sciences
+Applied Linguistics
+Computational Engineering
+Robotics
+Natural Language Processing
+Machine Learning
+Computer Engineering
+Computers and Society
+Artificial Intelligence
+Computational Linguistics
+Data Storage Systems
