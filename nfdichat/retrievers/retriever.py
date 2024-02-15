@@ -8,9 +8,11 @@ from typing import Any
 
 import numpy as np
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
-from langchain.retrievers import (EnsembleRetriever, KNNRetriever,
-                                  TFIDFRetriever)
-from langchain.retrievers.svm import SVMRetriever
+from langchain_community.retrievers import (KNNRetriever, 
+                                            TFIDFRetriever,
+                                            SVMRetriever)
+from langchain.retrievers import EnsembleRetriever
+# from langchain.retrievers.svm import SVMRetriever
 
 from nfdichat.common.config import main_config, retriever_config
 from nfdichat.common.util import io
@@ -139,7 +141,12 @@ class EnsembleBasedRetriever(Retriever):
         search_results_processed_file_path = os.path.join(
             directory_path, self.main_config["SEARCH_RESULTS_PROCESSED_FILE_NAME"]
         )
+        search_results_embeddings_file_path = os.path.join(
+            directory_path, self.main_config["SEARCH_RESULTS_EMBEDDINGS_FILE_NAME"]
+        )
+
         processed_docs = io.read_json(search_results_processed_file_path)
+        index = io.read_numpy_array(search_results_embeddings_file_path)
 
         tfidf_retriever = TFIDFRetriever.from_texts(
             texts=processed_docs, k=self.config["K"]
@@ -147,8 +154,14 @@ class EnsembleBasedRetriever(Retriever):
         knn_retriever = KNNRetriever.from_texts(
             texts=processed_docs, embeddings=self.embedding, k=self.config["K"]
         )
+        svm_retriever = SVMRetriever(
+            index=index,
+            texts=processed_docs,
+            embeddings=self.embedding,
+            k=self.config["K"],
+        )
         retriever_db = EnsembleRetriever(
-            retrievers=[tfidf_retriever, knn_retriever], weights=[0.4, 0.6]
+            retrievers=[tfidf_retriever, knn_retriever, svm_retriever], weights=[0.3, 0.3, 0.4]
         )
         return retriever_db
 

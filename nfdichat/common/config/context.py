@@ -50,9 +50,10 @@ retriever_config = StrictDict(
         "RETRIEVER_LM_HUGGINGFACE_REPO": ("sentence-transformers/all-MiniLM-L6-v2"),
         "K": 10,
         "DEVICE": "cpu",
+        "tfidf": "TFIDFBasedRetriever",
         "svm": "SVMBasedRetriever",
         "ensemble": "EnsembleBasedRetriever",
-        "tfidf": "TFIDFBasedRetriever",
+        
     }
 )
 
