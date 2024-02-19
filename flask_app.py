@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import datetime
 import json
 import os
 import traceback
@@ -92,7 +93,7 @@ def chat():
         return jsonify(data)
 
 
-@app.route("/save_docs_with_embeddings/<uuid>", methods=["POST", "GET"])
+@app.route("/save-docs-with-embeddings/<uuid>", methods=["POST", "GET"])
 def save_docs_with_embeddings(uuid):
     search_results = request.get_json()
     search_uuid = uuid
@@ -102,6 +103,20 @@ def save_docs_with_embeddings(uuid):
     RETRIEVER.save_docs_with_embeddings(json.loads(search_results), search_uuid)
 
     return "success"
+
+
+@app.route("/are-embeddings-generated/<uuid>", methods=["GET"])
+def are_embeddings_generated(uuid):
+    response= {}
+    print(f"{datetime.datetime.now()} - uuid: {uuid}")
+    directory_path = os.path.join(main_config["SEARCH_RESULTS_DIR"], uuid)
+    search_results_embeddings_file_path = os.path.join(
+            directory_path, main_config["SEARCH_RESULTS_EMBEDDINGS_FILE_NAME"]
+        )
+    file_exists = io.file_exists(search_results_embeddings_file_path)
+    response['file_exists'] = file_exists
+    print(f"{datetime.datetime.now()} - response: {response}")
+    return jsonify(response)
 
 
 if __name__ == "__main__":

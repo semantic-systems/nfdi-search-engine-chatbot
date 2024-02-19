@@ -8,6 +8,8 @@ from typing import Any, Dict
 
 import numpy as np
 
+def file_exists(file_path: str) -> bool:
+    return os.path.exists(file_path)
 
 def create_dir(directory_path: str) -> None:
     if not os.path.exists(directory_path):
