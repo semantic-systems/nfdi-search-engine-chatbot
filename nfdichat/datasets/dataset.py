@@ -128,9 +128,9 @@ class NFDISearchResultsDocumentProcessor(DocumentProcessor):
     ) -> dict:
         # Properties to exclude
         PROPERTIES_TO_IGNORE = [
-            "description",
-            "abstract",
-            "objective",
+            # "description",
+            # "abstract",
+            # "objective",
         ]
 
         out_dict = {}

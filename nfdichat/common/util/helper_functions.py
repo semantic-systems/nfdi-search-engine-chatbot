@@ -51,7 +51,7 @@ def flatten(dictionary, parent_key=False, separator="."):
 
 
 # copied from https://cookbook.openai.com/examples/how_to_count_tokens_with_tiktoken
-def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0613"):
+def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0125"):
     """Return the number of tokens used by a list of messages."""
     try:
         encoding = tiktoken.encoding_for_model(model)
@@ -66,6 +66,7 @@ def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0613"):
         "gpt-4-0613",
         "gpt-4-32k-0613",
         "gpt-4-0125-preview",
+        "gpt-3.5-turbo-0125",
     }:
         tokens_per_message = 3
         tokens_per_name = 1
