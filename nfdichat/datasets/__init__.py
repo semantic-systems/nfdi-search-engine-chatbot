@@ -2,8 +2,8 @@
 """ Package for the dataset component. """
 from nfdichat.datasets.dataset import (Dataset, DocumentProcessor,
                                        NFDISearchDataset,
-                                       NFDISearchDocumentProcessor, ToyDataset,
-                                       ToyDatasetDocumentProcessor)
+                                       NFDISearchResultsDocumentProcessor,
+                                       ToyDataset, ToyDatasetDocumentProcessor)
 
 __all__ = [
     "Dataset",
@@ -11,5 +11,5 @@ __all__ = [
     "ToyDataset",
     "ToyDatasetDocumentProcessor",
     "NFDISearchDataset",
-    "NFDISearchDocumentProcessor",
+    "NFDISearchResultsDocumentProcessor",
 ]

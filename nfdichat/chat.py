@@ -11,7 +11,7 @@ from langchain.memory import ConversationBufferMemory
 from nfdichat.common.config import (dataset_config, llm_config, main_config,
                                     retriever_config)
 from nfdichat.datasets import (Dataset, DocumentProcessor,
-                               NFDISearchDocumentProcessor,
+                               NFDISearchResultsDocumentProcessor,
                                ToyDatasetDocumentProcessor)
 from nfdichat.llms import VicunaLLM
 from nfdichat.retrievers import (EnsembleBasedRetriever, Retriever,

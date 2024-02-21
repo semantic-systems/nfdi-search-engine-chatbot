@@ -20,6 +20,10 @@ class VicunaLLM(LLM):
         :param stop:
         :return:
         """
+
+        print("Prompt:\n", prompt)
+        print("Prompt length:", len(prompt.split(" ")))
+
         response = requests.post(
             url=self.config["URL"],
             headers={"content-type": "application/json"},

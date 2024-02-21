@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
+import json
+from pprint import pprint
 from typing import Any, Dict, List
 
 from nfdichat.common.config import dataset_config
-from nfdichat.common.util import io
+from nfdichat.common.util import helper_functions, io
 
 
 class Dataset:
@@ -56,64 +58,103 @@ class NFDISearchDataset(Dataset):
         return search_query, retrieved_items
 
 
-class NFDISearchDocumentProcessor(DocumentProcessor):
-    IN_VALID_KEYS = ["timedout_sources"]
-    VALID_DATA_KEYS = [
-        "name",
-        "author",
-        # "description",
-        "keywords",
-        "source",
-        "abstract",
-        "license",
-        "datePublished",
-        "dateModified",
-        "dateCreated",
-        "inLanguage",
-        "publisher",
-        "orcid",
-        "affiliation",
-        "address",
-        "text",
-    ]
-    VALID_DATA_KEY_LIST_DT = ["inLanguage", "author", "keywords"]
-    # list: inLanguage, author, keywords
+# class NFDISearchDocumentProcessor(DocumentProcessor):
+#     IN_VALID_KEYS = ["timedout_sources"]
+#     VALID_DATA_KEYS = [
+#         "name",
+#         "author",
+#         # "description",
+#         "keywords",
+#         "source",
+#         "abstract",
+#         "license",
+#         "datePublished",
+#         "dateModified",
+#         "dateCreated",
+#         "inLanguage",
+#         "publisher",
+#         "orcid",
+#         "affiliation",
+#         "address",
+#         "text",
+#     ]
+#     VALID_DATA_KEY_LIST_DT = ["inLanguage", "author", "keywords"]
+#     # list: inLanguage, author, keywords
 
+#     def process_single_doc(
+#         self, parent_topic: str, input_doc: Dict, index: int
+#     ) -> List:
+#         processed_doc = []
+#         for valid_key in self.VALID_DATA_KEYS:
+#             processed_doc_text = f"{parent_topic.lower()} {str(index + 1)}: \n"
+#             value = input_doc.get(valid_key, "NONE")
+#             if str(value).lower() != "none" and value != "":
+#                 if valid_key == "author":
+#                     new_value = ""
+#                     for author in value:
+#                         new_value += (
+#                             f"{author.get('name')} ({author.get('affiliation', '')}) ,"
+#                         )
+
+#                     value = new_value
+#                 if valid_key == "inLanguage" or valid_key == "keywords":
+#                     value = ", ".join(value)
+#                 processed_doc_text += (
+#                     f"- {valid_key[0].upper()+valid_key[1:]} : {value}"
+#                 )
+#                 processed_doc.append(processed_doc_text)
+#         return processed_doc
+
+#     def process(self, items):
+#         processed_docs = []
+#         for parent_key, docs in items.items():
+#             if parent_key not in self.IN_VALID_KEYS:
+#                 for index, doc in enumerate(docs):
+#                     processed_doc_list = self.process_single_doc(
+#                         parent_topic=parent_key, input_doc=doc, index=index
+#                     )
+#                     for processed_doc in processed_doc_list:
+#                         processed_docs.append(processed_doc)
+#         print(
+#             f":::::::::::::::::::: Processed documents (NO:{len(processed_docs)}) ::::::::::::::"
+#         )
+
+#         return processed_docs
+
+
+class NFDISearchResultsDocumentProcessor(DocumentProcessor):
     def process_single_doc(
         self, parent_topic: str, input_doc: Dict, index: int
-    ) -> List:
-        processed_doc = []
-        for valid_key in self.VALID_DATA_KEYS:
-            processed_doc_text = f"{parent_topic.lower()} {str(index + 1)}: \n"
-            value = input_doc.get(valid_key, "NONE")
-            if str(value).lower() != "none" and value != "":
-                if valid_key == "author":
-                    new_value = ""
-                    for author in value:
-                        new_value += (
-                            f"{author.get('name')} ({author.get('affiliation', '')}) ,"
-                        )
+    ) -> dict:
+        # Properties to exclude
+        PROPERTIES_TO_IGNORE = [
+            # "description",
+            # "abstract",
+            # "objective",
+        ]
 
-                    value = new_value
-                if valid_key == "inLanguage" or valid_key == "keywords":
-                    value = ", ".join(value)
-                processed_doc_text += (
-                    f"- {valid_key[0].upper()+valid_key[1:]} : {value}"
-                )
-                processed_doc.append(processed_doc_text)
-        return processed_doc
+        out_dict = {}
+        out_dict = helper_functions.flatten(input_doc)
+        output_doc = parent_topic + "-No. " + str(index) + ": \n"
+        for k, v in out_dict.items():
+            if v and (k not in PROPERTIES_TO_IGNORE):
+                output_doc += f"- {k}: {v} \n"
+
+        return output_doc
 
     def process(self, items):
         processed_docs = []
         for parent_key, docs in items.items():
-            if parent_key not in self.IN_VALID_KEYS:
-                for index, doc in enumerate(docs):
-                    processed_doc_list = self.process_single_doc(
+            print(f"processing category: {parent_key}")
+            for index, doc in enumerate(docs):
+                if isinstance(doc, dict):
+                    processed_doc = self.process_single_doc(
                         parent_topic=parent_key, input_doc=doc, index=index
                     )
-                    for processed_doc in processed_doc_list:
-                        processed_docs.append(processed_doc)
+                    # processed_doc_str = json.dumps(processed_doc)
+                    processed_docs.append(processed_doc)
         print(
             f":::::::::::::::::::: Processed documents (NO:{len(processed_docs)}) ::::::::::::::"
         )
+
         return processed_docs
