@@ -273,30 +273,3 @@ Analyzing visualization tools for Knowledge Graphs
 Exploring Language Models in Education
 Surveying BioNLP Shared Tasks Corpora for Event Extraction
 Catalog of Large Language Models
-Semantic Web
-Computer and Systems Architecture
-Operating, Communication, Database and Distributed Systems
-Networking and Internet Architecture
-Semantics/Pragmatics
-Requirements Engineering
-Analysis
-Discourse/Text Linguistics
-Human Computer Interfaces
-Software Engineering
-Databases/Information Systems
-Linguistics
-Digital Communications and Networking
-Information Systems, Process and Knowledge Management
-Computational Neuroscience
-Computer Vision and Pattern Recognition
-Computer Sciences
-Applied Linguistics
-Computational Engineering
-Robotics
-Natural Language Processing
-Machine Learning
-Computer Engineering
-Computers and Society
-Artificial Intelligence
-Computational Linguistics
-Data Storage Systems
