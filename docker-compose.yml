@@ -6,4 +6,5 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - 6003:6003
+    restart: unless-stopped
     container_name: nfdisearchchatbot
