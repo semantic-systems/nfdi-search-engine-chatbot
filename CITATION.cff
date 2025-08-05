@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Babaei Giglou"
+  given-names: "Hamed"
+- family-names: "Taffa"
+  given-names: "Tilahun Abedissa"
+- family-names: "Abdullah"
+  given-names: "Rana"
+- family-names: "Usmanova"
+  given-names: "Aida"
+- family-names: "Usbeck"
+  given-names: "Ricardo"
+- family-names: "D’Souza"
+  given-names: "Jennifer"
+- family-names: "Auer"
+  given-names: "Sören"
+title: "Scholarly Question Answering Using Large Language Models in the NFDI4DataScience Gateway"
+version: 1.1.0
+date-released: 2024-09-13
+url: "https://github.com/semantic-systems/nfdi-search-engine-chatbot"
+keywords:
+  - "Scholarly Question Answering"
+  - "Federated Search"
+  - "Retrieval Augmented Generation"
+  - "Large Language Models"
+  - "NFDI4DS Gateway"
