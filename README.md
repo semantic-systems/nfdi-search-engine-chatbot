@@ -111,3 +111,16 @@ Respond:
     ]
 }
 ```
+
+### Citation
+
+```bibtex
+@inproceedings{babaei2024scholarly,
+  title={Scholarly Question Answering Using Large Language Models in the NFDI4DataScience Gateway},
+  author={Babaei Giglou, Hamed and Taffa, Tilahun Abedissa and Abdullah, Rana and Usmanova, Aida and Usbeck, Ricardo and D’Souza, Jennifer and Auer, S{\"o}ren},
+  booktitle={International Workshop on Natural Scientific Language Processing and Research Knowledge Graphs},
+  pages={3--18},
+  year={2024},
+  organization={Springer}
+}
+```
